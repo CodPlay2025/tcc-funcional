@@ -21,6 +21,11 @@
 
 }
 
+.voltar:hover {
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: radial-gradient(circle, #0d0f4d, #080a29);

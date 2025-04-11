@@ -8,7 +8,16 @@
 </head>
 <body>
     <!-- logo -->
-    <img src="LOGO1.png" alt="Logo" class="logo">
+    <img src="LOGO1.png" alt="Logo" class="logo" id="logo-btn">
+
+    <!-- MENU HAMBURGUER -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <ul>
+            <li><a href="../tela_perfil/editarperfil.html">Editar Perfil</a></li>
+            <li><a href="../tela_Start/index.html">Sair</a></li>
+        </ul>
+    </div>
 
     <div class="container">
         <h1>Bem vindo ao <br> <span>CODPLAY 360°</span></h1>
@@ -20,18 +29,19 @@
         </div>
         
         <div class="editar">    
-        <a class="perfil-button"> <img src="imgEditar.png"></a>
+            <a class="perfil-button" href="../tela_perfil/editarperfil.html">
+                <img src="imgEditar.png" alt="Editar perfil">
+            </a>
         </div>
 
         <div class="jogos">
-
             <!-- QUIZ -->
             <div class="tela" id="quiz-card">
                 <img src="quiz.png" alt="Quiz Programação">
                 <p>QUIZ PROGRAMAÇÃO</p>
             </div>
 
-            <!-- CLOMPETE A LOGICA -->
+            <!-- COMPLETAR LÓGICA -->
             <div class="tela">
                 <img src="logica.png" alt="Complete a Lógica">
                 <p>COMPLETE A LÓGICA</p>
@@ -42,9 +52,10 @@
                 <img src="digitacao.png" alt="Digitação de Código">
                 <p>DIGITAÇÃO DE COD</p>
             </div>
-             
         </div>
     </div>
+
     <script src="../JavaScript/conexoes_buttons.js"></script>
+    
 </body>
 </html>

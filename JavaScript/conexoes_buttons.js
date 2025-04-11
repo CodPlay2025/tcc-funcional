@@ -91,11 +91,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
 //quando o cabron clicar no card do quiz, ele vai pra tela do quiz (iria pra onde se nn fosse la ne animal)
 document.getElementById("quiz-card").addEventListener("click", function() {
     window.location.href = "../tela_quiz/dificuldade.html";
   });
+
+   
+  // JavaScript para abrir/fechar o menu hamburguer
+   const logoBtn = document.getElementById('logo-btn');
+   const menu = document.getElementById('hamburger-menu');
+   const closeBtn = document.getElementById('close-btn');
+
+   logoBtn.addEventListener('click', () => {
+       menu.style.display = 'block';
+   });
+
+   closeBtn.addEventListener('click', () => {
+       menu.style.display = 'none';
+   });
+
+   // Fecha ao clicar fora
+   window.addEventListener('click', (e) => {
+       if (e.target === menu) {
+           menu.style.display = 'none';
+       }
+   });
   

@@ -21,6 +21,11 @@
 
 }
 
+.voltar:hover {
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: radial-gradient(circle, #0d0f4d, #080a29);
@@ -107,7 +112,7 @@ h2 {
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.login-button:hover {
+.cadastrar:hover {
     background: linear-gradient(90deg, #0068cc, #0088ff);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
