@@ -224,10 +224,15 @@ const questions = {
   
   // Início do quiz
   function startQuiz() {
+    /*
     const nameInput = document.getElementById('player-name');
     const name = nameInput.value.trim();
+    */
+
+
     const level = localStorage.getItem('selectedLevel');
   
+    /*
     if (!name) {
       alert("Por favor, digite seu nome.");
       return;
@@ -236,9 +241,10 @@ const questions = {
     if (!level) {
       alert("Por favor, selecione a dificuldade antes.");
       return;
-    }
+    } 
   
     localStorage.setItem('playerName', name);
+    */
   
     document.getElementById('name-screen').classList.add('hidden');
     document.getElementById('quiz-container').classList.remove('hidden');
@@ -360,7 +366,7 @@ const questions = {
     document.getElementById("result-screen").classList.remove("hidden");
   
     const name = localStorage.getItem('playerName');
-    document.getElementById("final-score").textContent = `${name}, sua pontuação foi ${score}`;
+    document.getElementById("final-score").textContent = ` Sua pontuação foi ${score}`;
   
     updateRanking(name, score);
     displayRanking();
