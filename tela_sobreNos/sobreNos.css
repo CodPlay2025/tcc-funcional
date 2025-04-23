@@ -67,6 +67,7 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
+    align-items: center;
 }
 
 .tela {
@@ -75,9 +76,9 @@ body {
     border-radius: 15px;
     width: 350px;
     text-align: center;
-    
+    align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 .tela img {
@@ -97,5 +98,11 @@ body {
 
 
 .img {
-    clip-path: circle(40%);
+    clip-path: circle(60%);
 }
+
+.qrcode {
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    }

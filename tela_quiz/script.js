@@ -409,7 +409,7 @@ const questions = {
   }
   
   function goToMenu() {
-    window.location.href = "../tela_menu/menu.html";
+    window.location.href = "../modelo_dificuldade/explorer.html";
   }
   
   
