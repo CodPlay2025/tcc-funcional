@@ -28,15 +28,24 @@
         <!-- Usuário-->
         <div class="profile">
             <span>Otavinho</span>
+<<<<<<< HEAD
             <img id="avatar-menu" src="icone1.png" alt="Avatar do Menu">
+=======
+            <img id="avatar-menu" src="../tela_perfil/" alt="Avatar do Menu">
+>>>>>>> 6567b17a1da95faf8046b387ea1c36d86fc57af5
         </div>
 
+        
         <div class="jogos">
             <!-- QUIZ -->
-            <div class="tela" id="quiz-card">
+            <div class="tela" id="quiz">
                 <img src="imgQuiz.jpg" alt="Quiz Programação">
                 <p>QUIZ PROGRAMAÇÃO</p>
             </div>
+
+
+
+
 
             <!-- COMPLETAR LÓGICA 
             <div class="tela">
@@ -51,11 +60,16 @@
             </div>
             -->
 
+
+
+
+
         </div>
     </div>
 
     <script src="../JavaScript/conexoes_buttons.js"></script>
     <script>
+<<<<<<< HEAD
     window.addEventListener('DOMContentLoaded', () => {
         const avatarMenu = document.getElementById('avatar-menu');
         const avatarSalvo = localStorage.getItem('avatarSelecionado');
@@ -65,6 +79,17 @@
     });
 </script>
 
+=======
+        window.addEventListener('DOMContentLoaded', () => {
+            const avatarMenu = document.getElementById('avatar-menu');
+            const avatarSalvo = localStorage.getItem('avatarSelecionado');
+            if (avatarMenu && avatarSalvo) {
+                avatarMenu.setAttribute('src', avatarSalvo);
+            }
+        });
+    </script>
+    
+>>>>>>> 6567b17a1da95faf8046b387ea1c36d86fc57af5
     
 </body>
 </html>
