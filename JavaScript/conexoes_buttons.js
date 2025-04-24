@@ -91,29 +91,45 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//quando o cabron clicar no card do quiz, ele vai pra tela do quiz (iria pra onde se nn fosse la ne animal)
-document.getElementById("quiz-card").addEventListener("click", function() {
-    window.location.href = "../tela_quiz/dificuldade.html";
-  });
+document.addEventListener("DOMContentLoaded", function () {
+    // Quiz card no explorer.html
+    const quizCard = document.getElementById("quiz");
+    if (quizCard) {
+        console.log("Quiz card encontrado");
+        quizCard.addEventListener("click", function () {
+            window.location.href = "../jogo_quiz/dificuldade.html";
+        });
+    }
 
-   
-  // JavaScript para abrir/fechar o menu hamburguer
-   const logoBtn = document.getElementById('logo-btn');
-   const menu = document.getElementById('hamburger-menu');
-   const closeBtn = document.getElementById('close-btn');
+    // Quiz card em outra tela (se existir)
+    const quizCardAlt = document.getElementById("quiz-card");
+    if (quizCardAlt) {
+        quizCardAlt.addEventListener("click", function () {
+            window.location.href = "../tela_quiz/explorer.html";
+        });
+    }
 
-   logoBtn.addEventListener('click', () => {
-       menu.style.display = 'block';
-   });
+    // Hamburguer menu
+    const logoBtn = document.getElementById('logo-btn');
+    const menu = document.getElementById('hamburger-menu');
+    const closeBtn = document.getElementById('close-btn');
 
-   closeBtn.addEventListener('click', () => {
-       menu.style.display = 'none';
-   });
+    if (logoBtn && menu) {
+        logoBtn.addEventListener('click', () => {
+            menu.style.display = 'block';
+        });
+    }
 
-   // Fecha ao clicar fora
-   window.addEventListener('click', (e) => {
-       if (e.target === menu) {
-           menu.style.display = 'none';
-       }
-   });
-  
+    if (closeBtn && menu) {
+        closeBtn.addEventListener('click', () => {
+            menu.style.display = 'none';
+        });
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === menu) {
+            menu.style.display = 'none';
+        }
+    });
+});
+

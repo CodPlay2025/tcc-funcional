@@ -28,7 +28,7 @@
         <!-- Usuário-->
         <div class="profile">
             <span>Otavinho</span>
-            <img src="icone7.png" alt="Avatar">
+            <img id="avatar-menu" src="icone1.png" alt="Avatar do Menu">
         </div>
 
         <div class="jogos">
@@ -55,6 +55,16 @@
     </div>
 
     <script src="../JavaScript/conexoes_buttons.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const avatarMenu = document.getElementById('avatar-menu');
+        const avatarSalvo = localStorage.getItem('avatarSelecionado');
+        if (avatarMenu && avatarSalvo) {
+            avatarMenu.setAttribute('src', avatarSalvo);
+        }
+    });
+</script>
+
     
 </body>
 </html>
