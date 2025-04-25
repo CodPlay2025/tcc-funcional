@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cadastrarBtn) {
         cadastrarBtn.addEventListener("click", function (event) {
             event.preventDefault();
-            processarLoginOuCadastro("../tela_menu/menu.html"); 
+            processarLoginOuCadastro("../tela_perfil/editarperfil.html"); 
         });
     }
 
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Quiz card no explorer.html
-    const quizCard = document.getElementById("quiz");
+    const quizCard = document.getElementById("quiz-card");
     if (quizCard) {
         console.log("Quiz card encontrado");
         quizCard.addEventListener("click", function () {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Quiz card em outra tela (se existir)
-    const quizCardAlt = document.getElementById("quiz-card");
+    const quizCardAlt = document.getElementById("quiz");
     if (quizCardAlt) {
         quizCardAlt.addEventListener("click", function () {
             window.location.href = "../tela_quiz/explorer.html";

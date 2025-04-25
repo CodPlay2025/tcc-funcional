@@ -1,4 +1,3 @@
-<<<<<<< HEAD:tela_quiz/explorer.html
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -9,42 +8,58 @@
 </head>
 <body>
     <!-- logo -->
-    <img src="LOGO1.png" alt="Logo" class="logo">
+    <img src="../Imagens/imgLogo.png" alt="Logo" class="logo">
 
      <!-- botão de voltar -->
      <div class="voltar">
         <a href="../tela_menu/menu.html">
-             <img src="imgVoltar.png" ></a>
+             <img src="../Imagens/imgVoltar.png" ></a>
+    </div>
+
+     <!-- Usuário-->
+     <div class="profile">
+        <span>Otavio La Torraca</span>
+        <img id="avatar-menu" src="../Imagens/icone1.png" alt="Avatar do Menu">
+    </div>
+
+    <div class="universo">
+        <H1> 
+        UNIVERSO DO QUIZ
+        </H1>
     </div>
 
     <div class="container">
 
-        <div class="universo">
-            <H1>
-            UNIVERSO DO QUIZ
-            </H1>
-        </div>
-
         <h2>NOSSO QUIZ:<br></h2>
 
-        <!-- Usuário-->
-        <div class="profile">
-            <span>Otavio La Torraca</span>
-            <img id="avatar-menu" src="icone1.png" alt="Avatar do Menu">
-        </div>
-
-        <div class="dificuldade">
-
-            <div class="jogos">
                 <!-- QUIZ -->
-                <div class="tela" id="quiz">
-                    <img src="imgQuiz.jpg" alt="Quiz Programação">
+                <div class="tela" id="quiz-card">
+                    <img src="../Imagens/imgQuiz.jpg" alt="Quiz Programação">
                     <p>QUIZ PROGRAMAÇÃO 360°</p>
                 </div>
             
-        </div>
     </div>
+
+    <div class="container">
+
+        <h2>Explore pelo universo do Quiz:<br></h2>
+
+            <div class="explore">
+                <div class="tela" id="quiz-card">
+                    <img src="../Imagens/imgQuiz.jpg" alt="Quiz Programação">
+                    <p>QUIZ PROGRAMAÇÃO 360°</p>
+                </div>
+
+                <div class="tela" id="quiz-card">
+                    <img src="../Imagens/imgQuiz.jpg" alt="Quiz Programação">
+                    <p>QUIZ PROGRAMAÇÃO 360°</p>
+                </div>
+            </div>
+            
+    </div>
+
     <script src="../JavaScript/conexoes_buttons.js"></script>
+
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             const avatarMenu = document.getElementById('avatar-menu');
@@ -54,46 +69,6 @@
             }
         });
     </script>
+
 </body>
-=======
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dificuldade</title>
-    <link rel="stylesheet" href="explorer.css">
-</head>
-<body>
-    <!-- logo -->
-    <img src="LOGO1.png" alt="Logo" class="logo">
-
-     <!-- botão de voltar -->
-     <div class="voltar">
-        <a> <img src="imgVoltar.png" ></a>
-    </div>
-
-    <div class="container">
-        <h1>NOSSO QUIZ:<br></h1>
-
-        <!-- Usuário-->
-        <div class="profile">
-            <span>Otavio La Torraca</span>
-            <img src="icone7.png" alt="Avatar">
-        </div>
-
-        <div class="dificuldade">
-
-            <div class="jogos">
-                <!-- QUIZ -->
-                <div class="tela" id="quiz-card">
-                    <img src="imgQuiz.jpg" alt="Quiz Programação">
-                    <p>QUIZ PROGRAMAÇÃO 360°</p>
-                </div>
-            
-        </div>
-    </div>
-    <script src="../JavaScript/conexoes_buttons.js"></script>
-</body>
->>>>>>> 6567b17a1da95faf8046b387ea1c36d86fc57af5:modelo_dificuldade/explorer.html
 </html>

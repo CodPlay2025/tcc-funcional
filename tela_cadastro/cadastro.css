@@ -100,7 +100,7 @@ h2 {
     color: white;
 }
 
-.cadastrar {
+.fim-cadastro-button {
     width: 100%;
     padding: 15px;
     border: none;
@@ -112,7 +112,7 @@ h2 {
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cadastrar:hover {
+.fim-cadastro-button:hover {
     background: linear-gradient(90deg, #0068cc, #0088ff);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -135,7 +135,7 @@ h2 {
 }
 
 body {
-    background: url('background.png') no-repeat center center fixed;
+    background: url('../Imagens/imgBackground.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
     font-family: 'Poppins', sans-serif;
